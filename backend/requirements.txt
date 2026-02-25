@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+insightface
+onnxruntime
+opencv-python-headless
+numpy
+pydantic
+hypothesis
+pytest
+pytest-asyncio
+facenet-pytorch
+httpx
+openai

@@ -1,0 +1,51 @@
+.compare-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+  min-width: 140px;
+}
+
+.compare-button:hover:not(:disabled) {
+  background-color: #4338ca;
+}
+
+.compare-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.compare-button__spinner {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.compare-button__spinner-icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: compare-button-spin 0.6s linear infinite;
+}
+
+@keyframes compare-button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.compare-button__spinner-text {
+  font-weight: 600;
+}
